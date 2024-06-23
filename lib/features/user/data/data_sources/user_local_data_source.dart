@@ -29,8 +29,6 @@ class UserLocalDataSourceImpl implements UserLocalDataSource {
     }
   }
 
-
-
   @override
   Future<void> deleteUser(String userId) async {
     _users.removeWhere((user) => user.id == userId);
